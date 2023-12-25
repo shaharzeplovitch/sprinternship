@@ -1,4 +1,4 @@
-# Social Sprinternship Jobs Page
+# Sprinternship 2024 Social Jobs Page
 
 Welcome to Social Sprinternship Jobs Page! The simple page anyone can use to post or read others' interviews and jobs experiences! 
 
@@ -50,6 +50,28 @@ npm install
 
 Once this command finishes, you should see some new things in this repositories folder. You should now see a `package-lock.json` and `node_modules` folder in this current folder. If you don't have these two, something has gone wrong in the installation or you may be looking in the wrong folder, reach out to Greg or your mentor to figure this out.
 
+## Setting up JSON Server -- Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+JSON Server is a third party library that provides a full fake REST API (backend server API) with no database or API setup. 
+
+You can install it by running the below command in the same terminal window
+```shell
+npm i json-server ts-node --save-dev
+```
+
+In order for this to work, we will need to open up a new terminal and run our JSON Server while running our app. 
+
+Open up a new terminal window in the same repo location as above and run
+
+```shell
+json-server --watch db.json
+```
+
+You should see the following -> 
+`Loading db.json Done. Home http://localhost:3000`
+
+
+Note: Make sure to keep this terminal running at all times. 
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
@@ -58,14 +80,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 # Running the repo
 
-
 Now that everything is installed, lets's spin it up! To do so, you can run
 
 ```shell
 ng serve --open
 ```
-
-
 
 You should see
 
